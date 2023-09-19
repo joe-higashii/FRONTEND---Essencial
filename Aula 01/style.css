@@ -1,6 +1,7 @@
 body {
     background-color: lightgray;
     font-family: 'Roboto', 'Courier New', Courier, monospace;
+    background-image: url(./img/);
 }
 
 p {

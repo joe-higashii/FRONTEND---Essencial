@@ -1,0 +1,91 @@
+/*
+===========================================================
+// Zera as configurações padrões dos elementos html.
+===========================================================
+*/
+/*
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    outline: 0px;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+}*/
+
+:focus {
+    outline: 0px;
+}
+
+body {
+    font-family: 'Roboto';
+    background-color: lightgray;
+}
+
+.exemplo-paragrafo {
+    border: 2px groove blueviolet;
+    padding: 10px 20px 30px 40px;
+    margin: 50px;
+    text-align: center;
+    background-color: cadetblue;
+    height: 50px;
+    width: 100px;
+    font-size: small;
+}
+
+#primeiro-paragrafo {
+    color: red;
+}
+
+.cor-texto {
+    color: red;
+}
+
+#primeira-div {
+    width: 100px;
+    background-color: blue;
+    height: 100px;
+    border: groove;
+}
+
+#segunda-div {
+    width: 100px;
+    background-color: pink;
+    height: 100px;
+    border: groove;
+    margin-top: 10px;
+}
+
+.dimensoes-div {
+    height: 150px;
+    width: 150px;
+}
+
+.borda-div {
+    border: 2px solid green;
+    margin-top: 10px;
+}
+
+#div-jogos a {
+    font-size: 30px;
+    width: 200px;
+    height: 100px;
+}
+
+#imagem-pikachu {
+    float: right;
+}
+
+#teste-paragrafo {
+    clear: left;
+}
