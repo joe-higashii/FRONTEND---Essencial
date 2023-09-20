@@ -1,0 +1,81 @@
+.pai {
+    background-color: blue;
+    padding: 5px;
+    position: relative;
+    height: 200vh;
+}
+
+.filho-um {
+    background-color: green;
+    position: sticky;
+    top: 0vh;
+}
+
+.filho-dois {
+    background-color: orange;
+}
+
+.filho-tres {
+    background-color: pink;
+}
+
+#container {
+    color: red;
+}
+
+#paragrafo-diferente {
+    color: blue;
+}
+
+span.a {
+    display: inline;
+    height: 100px;
+    width: 200;
+    padding: 5px;
+    border: 1px solid blue;
+    background-color: grey;
+}
+
+span.b {
+    display: block;
+    height: 50px;
+    width: 200;
+    padding: 5px;
+    border: 1px solid brown;
+    background-color: grey;
+}
+
+span.c {
+    display: inline-block;
+    height: 50px;
+    width: 200;
+    padding: 5px;
+    border: 1px solid brown;
+    background-color: grey;
+}
+
+.nav {
+    background-color: #00f3fc;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100vw;
+}
+
+.nav li {
+    display: inline-block;
+    font-size: 10px;
+    padding: 10px;
+}
+
+a[target] {
+    background-color: yellow;
+}
+
+footer {
+    background-color: green;
+}
