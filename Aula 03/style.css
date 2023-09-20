@@ -1,0 +1,77 @@
+body {
+    background-color: lightgray;
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+
+.destaque ~ p {
+    color: blue;
+}
+
+h1 ~ div, p {
+    color: blue;
+}
+
+p:first-child {
+    color: blue;
+}
+
+.segundaDiv {
+    background-color: red;
+}
+
+.terceiraDiv {
+    background-color: pink;
+}
+
+.quartaDiv {
+    background-color: grey;
+}
+
+div {
+    margin-top: 10px;
+}
+
+.segundaDiv + div {
+    border: 5px solid;
+}
+
+.quartaDiv + div {
+    border: 5px solid;
+}
+
+#quintaDiv > p {
+    color: aquamarine;
+    font-weight: bold;
+}
+
+#lista > li {
+    color: green;
+}
+
+a:link {
+    color: brown;
+}
+
+a:visited {
+    color: green;
+}
+
+a:hover {
+    color: blue;
+    text-decoration: none;
+}
+
+#ps {
+    width: 150px;
+    height: 150px;
+    background-color: green;
+}
+
+#ps:hover {
+    background-color: blue;
+    cursor: pointer;
+    position: relative;
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}

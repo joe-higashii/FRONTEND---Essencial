@@ -1,0 +1,41 @@
+body {
+    background-color: lightgray;
+}
+
+#pai {
+    width: 50vw;
+    height: 300px;
+    background-color: aqua;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#filha1 {
+    width: 50px;
+    height: 50px;
+    background-color: brown;
+    color: white;
+}
+
+#filha2 {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    color: white;
+}
+
+#filha3 {
+    width: 50px;
+    height: 50px;
+    background-color: blueviolet;
+    color: white;
+}
+
+#filha4 {
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+    color: black;
+}
