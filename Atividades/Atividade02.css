@@ -1,0 +1,252 @@
+/* 1: Pseudo-classes de link: Criar uma página HTML com vários links. Em seguida, criar uma regra CSS que aplique uma cor diferente aos links visitados e não visitados. */
+
+/* Estilização para definir a fonte da letra da página */
+body {
+    font-family: 'Roboto';
+    background-image: linear-gradient(135deg, #66a6ff 0%, #b3d9ff 60%, #99c2ff 100%); /* Define um gradiente linear como plano de fundo */
+    min-height: 100vh;
+}
+
+h1 {
+    color: hotpink;
+}
+
+h2 {
+    color: crimson;
+}
+
+h3 {
+	color: #178ab4;
+}
+
+a:link {
+    color: green;
+    text-decoration: none; /* estilização para remover o sublinhado do link*/
+}
+
+/* estilização para colorir os links visitados  */
+a:visited {
+    color: aqua;
+}
+
+/* estilização para colorir o link quando passar o cursor do mouse por cima */
+a:hover {
+    color: red;
+}
+
+/* 2: Pseudo-elementos: Criar uma página HTML com um elemento de cabeçalho (por exemplo: h1, h2, h3...). Em seguida, Criar uma regra CSS que adiciona um elemento que exibe um ícone à esquerda do texto da tag html utilizada. */
+
+h1::before { /* uso do "::before" para posicionar o ícone antes do título */
+    font-family: 'Font Awesome 6 Free';
+    margin-right: 10px; /* espaçamento entre o ícone e o texto do título */
+    content:  "\f02b"; /* estilização do ícone */
+    color: darkorchid;
+}
+
+h2::before {
+	font-family: 'Font Awesome 6 Free';
+    margin-right: 10px;
+    content:  "\f06c";
+    color: green;
+}
+
+h3::before {
+	font-family: 'Font Awesome 6 Free';
+    margin-right: 10px;
+    content:  "\f007";
+    color: #178ab4;
+}
+
+/* 3: Seletores combinados: Criar uma página HTML com uma lista de itens. Criar uma regra CSS que selecione apenas os itens ímpares e aplique uma cor de fundo diferente. */
+
+li {
+    color: mediumslateblue;
+}
+
+ul li:nth-child(odd) { /* uso do ":nth-child(odd)" para selecionar os elementos filhos e ímpares  */
+    background-color: greenyellow;
+}
+
+/* 4: Pseudo-classes de estado: Criar uma página HTML com um botão. Em seguida, criar uma regra CSS que aplique uma cor de fundo diferente ao botão quando estiver desativado. */
+
+#botaoAnimado {
+    cursor: pointer; /* Define o cursor do mouse como uma mão quando passa sobre o botão, indicando que é clicável. */
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none; /* Remove a borda do botão. */
+    border-radius: 5px; /* Arredonda os cantos do botão com um raio de 5px. */
+    color: #fff; /* Define a cor do texto no botão como branco (#fff). */
+	background-color: #3498db; /* Define a cor de fundo do botão como azul (#3498db). */
+    transition: background-color 0.3s; /* Adiciona uma transição suave de cor de fundo ao botão com uma duração de 0.3 segundos. */
+}
+
+
+#botaoAnimado.active {
+    background-color: #3498db; /* Cor quando ativado */
+}
+
+#botaoAnimado.disabled {
+    background-color: #e74c3c; /* Cor quando desativado */
+}
+
+/* 5: Seletor de atributo: Criar uma página HTML com vários elementos que possuem um atributo específico. Em seguida, criar uma regra CSS que selecione apenas os elementos que possuem esse atributo e aplique uma cor de fundo diferente. */
+
+div[data-color="green"] {
+    background-color:forestgreen;
+    padding: 10px;
+    margin: 5px;
+}
+
+div[data-color="blue"] {
+    background-color: blue;
+    padding: 10px;
+    margin: 5px;
+	color: white;
+}
+
+div[data-color="red"] {
+    background-color: red;
+    padding: 10px;
+    margin: 5px;
+	color: white;
+}
+
+div[data-color="purple"] {
+    background-color: purple;
+    padding: 10px;
+    margin: 5px;
+	color: white;
+}
+
+/* 6: Combinando seletores: Criar uma página HTML com vários elementos de lista. Em seguida, criar uma regra CSS que selecione apenas os itens que são filhos diretos e aplique uma cor de fundo diferente. */
+
+ol > li {
+    background-color: #3498db; /* Cor de fundo para itens que são filhos diretos */
+    color: #fff;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+/* 7: Pseudo-classes de formulário: Criar um simples formulário HTML com vários campos de entrada. Criar uma regra CSS que aplique uma cor de fundo diferente aos campos de entrada quando estão focados. */
+
+.form {
+	position: relative;
+	background: #ffffff;
+	max-width: 320px;
+	width: 100%;
+	border-top: 5px solid #33b5e5;
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+	margin: 0 auto;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	border-radius: 10px;
+  }
+  
+  .form .toggle {
+	cursor: pointer;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: #33b5e5;
+	width: 30px;
+	height: 30px;
+	margin: -5px 0 0;
+	color: #ffffff;
+	font-size: 12px;
+	line-height: 30px;
+	text-align: center;
+  }
+  
+  .form .toggle .tooltip {
+	position: absolute;
+	top: 5px;
+	right: -65px;
+	display: block;
+	background: rgba(0, 0, 0, 0.006);
+	width: auto;
+	padding: 5px;
+	font-size: 10px;
+	line-height: 1;
+	text-transform: uppercase;
+  }
+  
+  .form .toggle .tooltip:before {
+	content: "";
+	position: absolute;
+	top: 5px;
+	left: -5px;
+	display: block;
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	border-right: 5px solid rgba(0, 0, 0, 0.6);
+  }
+  
+  .form .form {
+	display: none;
+	padding: 40px;
+  }
+  
+  .form- .form:nth-child(2) {
+	display: block;
+  }
+  
+  .form h2 {
+	margin: 0 0 20px;
+	color: #33b5e5;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1;
+  }
+  
+  .form input {
+	outline: none;
+	display: block;
+	width: 100%;
+	border: 1px solid #d9d9d9;
+	margin: 0 0 20px;
+	padding: 10px 15px;
+	box-sizing: border-box;
+	font-weight: 400;
+	transition: 0.3s ease;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  .form input:focus {
+	border: 1px solid #3498db ;
+	background-color: rgba(135, 206, 235, 0.5);
+	color: #333333;
+  }
+  
+  .form button {
+	cursor: pointer;
+	background: #33b5e5;
+	width: 100%;
+	border: 0;
+	padding: 10px 15px;
+	color: #ffffff;
+	transition: 0.3s ease;
+	border-radius: 0 0 10px 10px;
+  }
+  
+  .form button:hover {
+	background: #178ab4;
+  }
+  
+  .form .cta {
+	background: #f2f2f2;
+	width: 100%;
+	padding: 15px 40px;
+	box-sizing: border-box;
+	color: #666666;
+	font-size: 12px;
+	text-align: center;
+  }
+  
+  .form .cta a {
+	color: #333333;
+	text-decoration: none;
+  }
