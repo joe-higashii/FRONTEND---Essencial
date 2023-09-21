@@ -1,0 +1,51 @@
+body {
+    background-color: lightgray;
+    font-family: 'Roboto';
+}
+
+#primeiro-paragrafo::first-letter {
+    color: red;
+    font-size: 30px;
+}
+
+#primeiro-paragrafo::first-line {
+    background-color: yellow;
+}
+
+h3:hover::before {
+    background-image: url(./img/images.png);
+    background-size: 50px 50px;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    content: "";
+    opacity: 5.8;
+}
+
+h3:hover::after {
+    content: ':';
+}
+
+p:first-child {
+    background-color: yellow;
+}
+
+#exBorder {
+    width: 150px;
+    height: 150px;
+    background-color: blueviolet;
+    border-radius: 15px 50px 70px;
+    position: relative;
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+    box-shadow: 5px 5px black;
+}
+
+p:first-child {
+    text-shadow: 2px 2px black;
+}
+
+p {
+    font-family: monospace;
+    color: rgba(180, 0, 0, 0.5);
+}
