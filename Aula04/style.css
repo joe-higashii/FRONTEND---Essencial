@@ -1,0 +1,78 @@
+body {
+    background-color: lightgray;
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Roboto';
+}
+
+#botaoGeleia {
+	cursor: pointer;
+	position: relative;
+	padding: 0.833rem 2.5rem;
+	border-radius: 1.25rem;
+	line-height: 1.667rem;
+	font-size: 1.333rem;
+	font-weight: 600;
+	border: 1px solid #012880;
+	background-image: linear-gradient(-180deg, #FF89D6 0%, #C01F9E 100%);
+	box-shadow: 0 0.333rem 0.417rem 0 rgba(22, 75, 195, 0.50),
+				0 -0.083rem 0.5rem rgba(110, 15, 155, 1) inset,
+				0 0.25rem 0.167rem rgba(255, 255, 255, 0.4) inset,
+				0 0.083rem 0.167rem 0 rgba(180, 70, 207, 1) inset;
+	transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#botaoGeleia:hover {
+	transform: scale(1.05); /* Aumenta um pouco o tamanho ao passar o mouse */
+	box-shadow: 0 0.417rem 0.5rem 0 rgba(22, 75, 195, 0.50),
+				0 -0.083rem 0.75rem rgba(110, 15, 155, 1) inset,
+				0 0.25rem 0.25rem rgba(255, 255, 255, 0.4) inset,
+				0 0.125rem 0.25rem 0 rgba(180, 70, 207, 1) inset;
+}
+
+#botaoGeleia:active {
+	transform: scale(0.95); /* Diminui um pouco o tamanho ao clicar */
+	box-shadow: 0 0.25rem 0.25rem 0 rgba(22, 75, 195, 0.50),
+				0 -0.125rem 0.5rem rgba(110, 15, 155, 1) inset,
+				0 0.125rem 0.125rem rgba(255, 255, 255, 0.4) inset,
+				0 0.0625rem 0.125rem 0 rgba(180, 70, 207, 1) inset;
+}
+
+#botaoGeleia span {
+	color: transparent;
+	background-image: linear-gradient(0deg, #EE82DA 0%, #FEFAFD 100%);
+	-webkit-background-clip: text;
+	background-clip: text;
+	filter: drop-shadow(0 0.667px 0.667px hsla(290, 100%, 20%, 1));
+}
+
+#botaoGeleia::before {
+	content: "";
+	display: block;
+	height: 0.083rem;
+	position: absolute;
+	top: 0.167rem;
+	left: 50%;
+	transform: translateX(-50%);
+	width: calc(100% - 2.5rem);
+	background: #fff;
+	border-radius: 100%;
+	opacity: 0.7;
+	background-image: linear-gradient(-270deg, rgba(255, 255, 255, 0.00) 0%, #FFFFFF 20%, #FFFFFF 80%, rgba(255, 255, 255, 0.00) 100%);
+}
+
+#botaoGeleia::after {
+	content: "";
+	display: block;
+	height: 0.083rem;
+	position: absolute;
+	bottom: 0.25rem;
+	left: 50%;
+	transform: translateX(-50%);
+	width: calc(100% - 2.5rem);
+	background: #fff;
+	border-radius: 100%;
+	filter: blur(0.333px);
+	opacity: 0.05;
+	background-image: linear-gradient(-270deg, rgba(255, 255, 255, 0.00) 0%, #FFFFFF 20%, #FFFFFF 80%, rgba(255, 255, 255, 0.00) 100%);
+}

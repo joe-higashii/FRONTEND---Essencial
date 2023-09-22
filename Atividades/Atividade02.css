@@ -19,6 +19,8 @@ h3 {
 	color: #178ab4;
 }
 
+
+
 a:link {
     color: green;
     text-decoration: none; /* estilização para remover o sublinhado do link*/
@@ -120,9 +122,17 @@ div[data-color="purple"] {
 
 /* 6: Combinando seletores: Criar uma página HTML com vários elementos de lista. Em seguida, criar uma regra CSS que selecione apenas os itens que são filhos diretos e aplique uma cor de fundo diferente. */
 
-ol > li {
+ol > li > h5 {
     background-color: #3498db; /* Cor de fundo para itens que são filhos diretos */
     color: #fff;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+h5 {
+	background-color: red;
+	color: #fff;
     padding: 5px;
     margin: 5px;
     border-radius: 5px;
