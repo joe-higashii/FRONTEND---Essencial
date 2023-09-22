@@ -1,0 +1,53 @@
+/* Exercício 01 */
+a:link {
+    color: green;
+}
+
+a:visited {
+    color:deeppink;
+}
+/* Exercício 02 */
+h2::before {
+    content: "\1F680";
+    display: inline-block;
+}
+/* Exercício 03 */
+.div03 li:nth-child(odd) {
+    color: brown;
+}
+/* Exercício 04 */
+.div04 button {
+    background-color: cornflowerblue;
+}
+
+.div04 button:disabled {
+    background-color:goldenrod;
+}
+/* Exercício 05 */
+.div05[data-color="green"] {
+    background-color:forestgreen;
+    padding: 10px;
+    margin: 5px;
+}
+
+.div05[data-color="blue"] {
+    background-color: blue;
+    padding: 10px;
+    margin: 5px;
+	color: white;
+}
+
+.div05[data-color="red"] {
+    background-color: red;
+    padding: 10px;
+    margin: 5px;
+	color: white;
+}
+/* Exercício 06 */
+.div06 > ul > li {
+    background-color: darkmagenta;
+}
+/* Exercício 07 */
+input:focus {
+    background-color: aqua;
+}
