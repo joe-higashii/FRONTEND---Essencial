@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="../favicon/favicon.ico" />
+    <title>Login Zhonya</title>
+  </head>
+  <body>
+    <div class="container animate">
+      <div class="row">
+        <div class="col-5">
+          <h1>Login</h1>
+          <form
+            onsubmit="return verificarlogin()"
+            action="../paginaPrincipal/paginaPrincipal.html"
+          >
+            <div class="form-group">
+              <label style="font-size: x-large" for="email">Email:</label>
+              <input
+                type="email"
+                class="form-control"
+                placeholder="E-mail"
+                id="email"
+                name="email"
+                required
+                
+              />
+            </div>
+            <div class="form-group">
+              <label style="font-size: x-large" for="pwd">Senha:</label>
+              <input
+                type="password"
+                class="form-control"
+                placeholder="Senha com 8 digitos"
+                id="pwd"
+                name="pwd"
+                required
+              />
+            </div>
+            <div class="form-group form-check">
+              <label
+                style="display: flex; align-items: center; font-size: large"
+                class="form-check-label"
+              >
+                <input
+                  onclick="gravaLogin()"
+                  class="form-check-input"
+                  type="checkbox"
+                />
+                Gravar
+              </label>
+            </div>
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+              "
+            >
+              <button
+                style="font-size: large"
+                type="submit"
+                class="btn btn-outline-dark"
+              >
+                Entrar
+              </button>
+              <a
+                style="font-size: large"
+                class="btn btn-outline-dark"
+                href="../cadastro/register.html"
+                >Cadastrar</a
+              >
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./home.js"></script>
+  </body>
+</html>

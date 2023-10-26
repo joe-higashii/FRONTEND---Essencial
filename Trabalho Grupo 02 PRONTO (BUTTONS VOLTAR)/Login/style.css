@@ -1,0 +1,35 @@
+body {
+  background-image: url(../image/apraia.jpeg);
+  background-size: cover;
+  height: 110vw;
+  background-position: center 0;
+}
+
+.row {
+  align-items: center;
+  justify-content: center;
+  margin-top: 10vw;
+}
+
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s;
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}

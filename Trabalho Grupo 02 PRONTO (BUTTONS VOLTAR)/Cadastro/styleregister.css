@@ -1,0 +1,40 @@
+/* Define o estilo para o corpo (body) da página */
+body {
+  background-image: url(../image/apraia.jpeg); /* Define a imagem de fundo com uma URL */
+  background-size: cover; /* Faz a imagem de fundo cobrir todo o elemento */
+  height: 110vh; /* Define a altura do elemento como 98% da altura da viewport */
+  background-position: center 0; /* Posiciona a imagem de fundo no centro vertical e na parte superior horizontal */
+}
+
+/* Define o estilo para todos os elementos com a classe "row" */
+.row {
+  /*align-items: center;  Alinha verticalmente os itens ao centro */
+  justify-content: center; /* Alinha horizontalmente os itens ao centro */
+  margin-top: 5vw; /* Define a margem superior como 10% da largura da viewport */
+}
+
+/* Define o estilo para todos os elementos com a classe "animate" */
+.animate {
+  -webkit-animation: animatezoom 0.6s; /* Aplica uma animação chamada "animatezoom" com duração de 0.6 segundos usando o prefixo webkit */
+  animation: animatezoom 0.6s; /* Aplica a mesma animação sem o prefixo webkit */
+}
+
+/* Define a animação chamada "animatezoom" usando o prefixo webkit */
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0); /* Inicia a escala em 0 (invisível) */
+  }
+  to {
+    -webkit-transform: scale(1); /* Termina a escala em 1 (tamanho normal) */
+  }
+}
+
+/* Define a animação chamada "animatezoom" */
+@keyframes animatezoom {
+  from {
+    transform: scale(0); /* Inicia a escala em 0 (invisível) */
+  }
+  to {
+    transform: scale(1); /* Termina a escala em 1 (tamanho normal) */
+  }
+}
